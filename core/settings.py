@@ -19,7 +19,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "graphene_django",
     "app",
-    "category_crud",
 ]
 
 MIDDLEWARE = [
@@ -52,7 +51,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "core.wsgi.application"
 
-GRAPHENE = {"SCHEMA": "category_crud.schema.schema"}
+GRAPHENE = {"SCHEMA": "app.schemas.schema"}
 
 
 DATABASES = {
